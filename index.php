@@ -12,9 +12,7 @@
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
-
 <body>
-
 <?php 
 $insert = false;
 if(isset($_POST['title'])){
@@ -35,7 +33,7 @@ if(isset($_POST['title'])){
     $title = $_POST['title'];
     $desc = $_POST['desc'];
     
-    // Collect post variables
+    // Collect all post variables
     $sql = "INSERT INTO `todoslist`.`todos`(`name`, `title`, `des`, `time`) VALUES ('$user','$title','$desc',current_timestamp())";
     // echo $sql;
     // Execute the query
